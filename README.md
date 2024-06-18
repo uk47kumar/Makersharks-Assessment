@@ -1,67 +1,86 @@
-Makersharks-Assessment
+# Makersharks-Assessment
 
 Spring Boot Application with In-Memory H2 Database and Swagger Documentation
 
-Table of Contents
+# Table of Contents
+
 Introduction
+
 Features
+
 Prerequisites
+
 Installation
+
 Running the Application
+
 Accessing Swagger Documentation
+
 Database Configuration
+
 Exception Handling
 
 
-
-Introduction
+# Introduction
 This is a Spring Boot application that uses an in-memory H2 database for development and testing purposes. It also includes Swagger for API documentation and testing.
 
 
-Features
+# Features
 Spring Boot framework
+
 In-memory H2 database
+
 Swagger UI for API documentation
+
 RESTful endpoints
 
+Comprehensive exception handling
 
-Prerequisites
+
+# Prerequisites
 Java 8 or higher
+
 Maven 3.6.3 or higher
 
 
-Installation
+# Installation
 1.Clone the repository: git clone https://github.com/uk47kumar/Makersharks-Assessment.git
+
 cd Makersharks-Assessment
 
 2.Build the project using Maven: mvn clean install
 
 
-Running the Application
+# Running the Application
 1.Run the application using Maven: mvn spring-boot:run
+
 2.Alternatively, you can run the application using the generated JAR file: java -jar target/your-application-name.jar
 
 
-Accessing Swagger Documentation
+# Accessing Swagger Documentation
 Once the application is running, you can access the Swagger UI at the following URL: http://localhost:8080/swagger-ui.html
+
 This will open the Swagger interface where you can explore and test the API endpoints.
 
 
-Database Configuration
+# Database Configuration
 The application uses an in-memory H2 database, which is configured in the application.properties file as follows:
 
 # H2 Database configuration
 spring.datasource.url=jdbc:h2:mem:test
+
 spring.h2.console.enabled=true
 
 # JPA configuration
 spring.jpa.show-sql=true
+
 spring.jpa.properties.hibernate.format_sql=true
 
-You can access the H2 database console at: http://localhost:8080/h2-console
+# You can access the H2 database console at: 
+http://localhost:8080/h2-console
 
 
-Exception Handling
+# Exception Handling
 The application includes comprehensive exception handling to manage various types of exceptions gracefully.
 
 Global Exception Handling
